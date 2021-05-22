@@ -1,0 +1,276 @@
+$fondo-2: #f2f2f2
+$gris: #707070
+$morado: #918BB2
+$morado-claro: #A7A0CE
+
+//========================================
+//GENERAL
+//========================================
+*
+    margin: 0px
+    padding: 0px
+
+body
+    overflow-x: hidden
+
+//========================================
+//HEADER
+//========================================
+.tonof    
+    font-weight: 900
+    color: $gris
+    margin-top: 10px
+
+nav ul li
+    display: inline-block
+    padding: 5px 10px
+    margin: 15px px 0px 8px
+    a
+        font-weight: 300
+        font-size: 20px
+        text-decoration: none
+        color: inherit
+        &:hover
+            color: $morado
+            text-decoration: none
+
+//========================================
+//BIENVENIDA
+//========================================
+.bienvenida
+    padding: 0px
+    margin-top: 60px 
+    h1
+        font-weight: 700
+        color: $morado
+        border: 0
+    h3
+        font-weight: 300
+        margin: 30px 0px
+    .btn
+        font-weight: 300
+        font-size: 28px
+        color: $fondo-2
+        background: $morado
+        border: 0
+        padding: 13px 28px
+        transition: all 1s ease
+        &:hover
+            box-shadow: 0 4px 12px rgba(167, 160, 206, 1)
+            background: $morado-claro
+            color: #fff !important
+
+.perfil
+    position: relative
+    bottom: 133px
+
+//========================================
+//ACERCA DE
+//========================================
+.acerca-de-fondo
+    background-color: $fondo-2
+    h1
+        text-align: center
+        font-weight: 700
+        color: $morado
+        margin: 30px 0px
+    p
+        text-align: justify
+        font-size: 24px
+        font-weight: 300
+
+.conocimientos ul
+    margin-left: 20px
+
+//========================================
+//PORTAFOLIO
+//========================================
+.portafolio
+    h1
+        text-align: center
+        font-weight: 700
+        color: $morado
+        margin: 30px 0px
+
+.btn 
+    background-color: white
+    border: 1px solid #cccccc//border-radius: 1rem
+    color: #696969
+    padding: 0.5rem
+    text-transform: lowercase
+
+.btn--block 
+    display: block
+    width: 100%
+    transition: all 0.8s ease
+    &:hover
+        background: $morado-claro
+        color: $fondo-2
+
+.cards 
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    margin: 0
+    padding: 0
+
+.card 
+    background-color: white
+    border-radius: 0.25rem
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25)
+    display: flex
+    flex-direction: column
+    overflow: hidden
+    margin-bottom: 30px
+    &:hover 
+        .card__image 
+            filter: contrast(100%)
+
+.card__content 
+    display: flex
+    flex: 1 1 auto
+    flex-direction: column
+    padding: 1rem
+
+.card__image 
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    border-top-left-radius: 0.25rem
+    border-top-right-radius: 0.25rem
+    filter: contrast(70%)
+    overflow: hidden
+    position: relative
+    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91)
+    &::before 
+        content: ""
+        display: block
+        padding-top: 56.25% // 16:9 aspect ratio
+
+.card__image--flowers 
+    background-image: url(https://unsplash.it/800/600?image=82)
+.card__image--river 
+    background-image: url("../img/camaleones.JPG")
+.card__image--record 
+    background-image: url("../img/calculadora.JPG")
+.card__image--fence 
+    background-image: url("../img/ceesp.JPG")
+
+.card__title 
+    color: #696969
+    font-size: 1.25rem
+    font-weight: 300
+    letter-spacing: 2px
+    text-transform: uppercase
+
+.card__text 
+    flex: 1 1 auto
+    font-size: 0.875rem
+    line-height: 1.5
+    margin-bottom: 1.25rem
+
+//========================================
+//CONTACTO
+//========================================
+.contacto-fondo
+    background: $fondo-2
+    padding: 30px 0px
+    h1
+        text-align: center
+        font-weight: 700
+        color: $morado
+        margin: 30px 0px
+    .tarjeta-subfondo
+        background: #fff
+        padding: 30px 0px
+        box-shadow: 0px 2px 9px 1px rgba(112,112,112,0.3)
+    .btn
+        font-weight: 300
+        font-size: 28px
+        color: $fondo-2
+        background: $morado
+        border: 0
+        padding: 13px 28px
+        text-align: center
+        width: 100%
+        &:hover
+            box-shadow: 0 4px 12px rgba(167, 160, 206, 1)
+            background: $morado-claro
+            color: #fff !important
+
+.caja-input p label
+    font-weight: 900
+    color: $gris
+
+.nombre, .email, .textarea
+    width: 100%
+    font-weight: 300
+    border: none
+    background: none
+    outline: 0
+    color: $gris
+    border-bottom: 1px solid $morado
+
+.redes i
+    margin-right: 10px
+    &:hover
+        opacity: 0.7
+
+//========================================
+//FOOTER
+//========================================
+.footer
+	height: 50px
+	color: #FFFFFF
+	background: #0f0f0f
+
+//========================================
+//SCROLL UP
+//========================================
+#scrollUp
+	bottom: 20px
+	right: 20px
+	width: 50px
+	height: 50px
+	background: url(../img/flecha.jpg)
+
+
+//========================================
+//CAMBIOS RESPONSIVE
+//========================================
+@media only screen and (max-width: 991px)
+    .datos-personales
+        display: flex
+        margin-bottom: 30px
+        p
+            margin-right: 60px
+
+
+@media only screen and (max-width: 768px)
+    .espacio-blanco
+        display: none
+    .bienvenida
+        justify-content: center
+        margin-top: 0px
+        text-align: center
+
+    .perfil
+        bottom: 30px
+    .nav
+        margin-bottom: 0px
+    .datos-personales
+        display: inline-block
+        p
+            margin-right: 60px
+
+@media only screen and (max-width: 585px) 
+    nav ul li
+        width: 100%
+        box-sizing: border-box
+        text-align: center
+
+@media only screen and (max-width: 300px) 
+    .bienvenida
+        h1 
+            font-size: 32px
+

@@ -1,0 +1,274 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  overflow-x: hidden; }
+
+.tonof {
+  font-weight: 900;
+  color: #707070;
+  margin-top: 10px; }
+
+nav ul li {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 15px px 0px 8px; }
+  nav ul li a {
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit; }
+    nav ul li a:hover {
+      color: #918BB2;
+      text-decoration: none; }
+
+.bienvenida {
+  padding: 0px;
+  margin-top: 60px; }
+  .bienvenida h1 {
+    font-weight: 700;
+    color: #918BB2;
+    border: 0; }
+  .bienvenida h3 {
+    font-weight: 300;
+    margin: 30px 0px; }
+  .bienvenida .btn {
+    font-weight: 300;
+    font-size: 28px;
+    color: #f2f2f2;
+    background: #918BB2;
+    border: 0;
+    padding: 13px 28px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+    .bienvenida .btn:hover {
+      -webkit-box-shadow: 0 4px 12px #a7a0ce;
+              box-shadow: 0 4px 12px #a7a0ce;
+      background: #A7A0CE;
+      color: #fff !important; }
+
+.perfil {
+  position: relative;
+  bottom: 133px; }
+
+.acerca-de-fondo {
+  background-color: #f2f2f2; }
+  .acerca-de-fondo h1 {
+    text-align: center;
+    font-weight: 700;
+    color: #918BB2;
+    margin: 30px 0px; }
+  .acerca-de-fondo p {
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 300; }
+
+.conocimientos ul {
+  margin-left: 20px; }
+
+.portafolio h1 {
+  text-align: center;
+  font-weight: 700;
+  color: #918BB2;
+  margin: 30px 0px; }
+
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: lowercase; }
+
+.btn--block {
+  display: block;
+  width: 100%;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease; }
+  .btn--block:hover {
+    background: #A7A0CE;
+    color: #f2f2f2; }
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .card:hover .card__image {
+    -webkit-filter: contrast(100%);
+            filter: contrast(100%); }
+
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem; }
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -webkit-filter: contrast(70%);
+          filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); }
+  .card__image::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; }
+
+.card__image--flowers {
+  background-image: url(https://unsplash.it/800/600?image=82); }
+
+.card__image--river {
+  background-image: url("../img/camaleones.JPG"); }
+
+.card__image--record {
+  background-image: url("../img/calculadora.JPG"); }
+
+.card__image--fence {
+  background-image: url("../img/ceesp.JPG"); }
+
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.card__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem; }
+
+.contacto-fondo {
+  background: #f2f2f2;
+  padding: 30px 0px; }
+  .contacto-fondo h1 {
+    text-align: center;
+    font-weight: 700;
+    color: #918BB2;
+    margin: 30px 0px; }
+  .contacto-fondo .tarjeta-subfondo {
+    background: #fff;
+    padding: 30px 0px;
+    -webkit-box-shadow: 0px 2px 9px 1px rgba(112, 112, 112, 0.3);
+            box-shadow: 0px 2px 9px 1px rgba(112, 112, 112, 0.3); }
+  .contacto-fondo .btn {
+    font-weight: 300;
+    font-size: 28px;
+    color: #f2f2f2;
+    background: #918BB2;
+    border: 0;
+    padding: 13px 28px;
+    text-align: center;
+    width: 100%; }
+    .contacto-fondo .btn:hover {
+      -webkit-box-shadow: 0 4px 12px #a7a0ce;
+              box-shadow: 0 4px 12px #a7a0ce;
+      background: #A7A0CE;
+      color: #fff !important; }
+
+.caja-input p label {
+  font-weight: 900;
+  color: #707070; }
+
+.nombre, .email, .textarea {
+  width: 100%;
+  font-weight: 300;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #707070;
+  border-bottom: 1px solid #918BB2; }
+
+.redes i {
+  margin-right: 10px; }
+  .redes i:hover {
+    opacity: 0.7; }
+
+.footer {
+  height: 50px;
+  color: #FFFFFF;
+  background: #0f0f0f; }
+
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: url(../img/flecha.jpg); }
+
+@media only screen and (max-width: 991px) {
+  .datos-personales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px; }
+    .datos-personales p {
+      margin-right: 60px; } }
+
+@media only screen and (max-width: 768px) {
+  .espacio-blanco {
+    display: none; }
+  .bienvenida {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0px;
+    text-align: center; }
+  .perfil {
+    bottom: 30px; }
+  .nav {
+    margin-bottom: 0px; }
+  .datos-personales {
+    display: inline-block; }
+    .datos-personales p {
+      margin-right: 60px; } }
+
+@media only screen and (max-width: 585px) {
+  nav ul li {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center; } }
+
+@media only screen and (max-width: 300px) {
+  .bienvenida h1 {
+    font-size: 32px; } }
+/*# sourceMappingURL=estilos.css.map */
