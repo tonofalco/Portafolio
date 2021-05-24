@@ -2,6 +2,7 @@ $fondo-2: #f2f2f2
 $gris: #707070
 $morado: #918BB2
 $morado-claro: #A7A0CE
+$negro: #0f0f0f
 
 //========================================
 //GENERAL
@@ -33,6 +34,20 @@ nav ul li
         &:hover
             color: $morado
             text-decoration: none
+
+.btn-menu
+    display: none
+    width: 55px
+    height: 55px
+    border: 1px solid #000
+    background: transparent
+    cursor: pointer
+    font-size: 28px
+    transition: .3s ease all
+    margin-top: 10px
+    &:hover
+        color: #828282
+
 
 //========================================
 //BIENVENIDA
@@ -76,7 +91,7 @@ nav ul li
         margin: 30px 0px
     p
         text-align: justify
-        font-size: 24px
+        font-size: 23px
         font-weight: 300
 
 .conocimientos ul
@@ -222,7 +237,7 @@ nav ul li
 .footer
 	height: 50px
 	color: #FFFFFF
-	background: #0f0f0f
+	background: $negro
 
 //========================================
 //SCROLL UP
@@ -233,6 +248,30 @@ nav ul li
 	width: 50px
 	height: 50px
 	background: url(../img/flecha.jpg)
+
+//========================================
+//PUSHBAR
+//========================================
+.pushbar-menu
+    background: $negro
+    color: #fff
+    padding: 20px
+    .btn-cerrar
+        text-align: right
+        button
+            background: none
+            color: #808080
+            border: none
+            cursor: pointer
+            font-size: 20px
+    a 
+        display: block
+        color: #aaa
+        padding: 20px 0px
+        border-bottom: 1px solid rgba(112,112,112,.60)
+        font-weight: 300
+        font-size: 18px
+        transition: .3s ease color
 
 
 //========================================
@@ -253,6 +292,8 @@ nav ul li
         justify-content: center
         margin-top: 0px
         text-align: center
+        h3
+            font-size: 24px
 
     .perfil
         bottom: 30px
@@ -265,12 +306,17 @@ nav ul li
 
 @media only screen and (max-width: 585px) 
     nav ul li
-        width: 100%
-        box-sizing: border-box
-        text-align: center
-
+        display: none
+    .btn-menu
+        display: inline-block
+        position: absolute
+        left: 165%
+        bottom: 22px
+    
 @media only screen and (max-width: 300px) 
     .bienvenida
         h1 
             font-size: 32px
+    .btn-menu
+        left: 150%
 

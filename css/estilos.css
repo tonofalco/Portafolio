@@ -23,6 +23,20 @@ nav ul li {
       color: #918BB2;
       text-decoration: none; }
 
+.btn-menu {
+  display: none;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  font-size: 28px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  margin-top: 10px; }
+  .btn-menu:hover {
+    color: #828282; }
+
 .bienvenida {
   padding: 0px;
   margin-top: 60px; }
@@ -61,7 +75,7 @@ nav ul li {
     margin: 30px 0px; }
   .acerca-de-fondo p {
     text-align: justify;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 300; }
 
 .conocimientos ul {
@@ -234,6 +248,28 @@ nav ul li {
   height: 50px;
   background: url(../img/flecha.jpg); }
 
+.pushbar-menu {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 20px; }
+  .pushbar-menu .btn-cerrar {
+    text-align: right; }
+    .pushbar-menu .btn-cerrar button {
+      background: none;
+      color: #808080;
+      border: none;
+      cursor: pointer;
+      font-size: 20px; }
+  .pushbar-menu a {
+    display: block;
+    color: #aaa;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.6);
+    font-weight: 300;
+    font-size: 18px;
+    -webkit-transition: .3s ease color;
+    transition: .3s ease color; }
+
 @media only screen and (max-width: 991px) {
   .datos-personales {
     display: -webkit-box;
@@ -252,6 +288,8 @@ nav ul li {
             justify-content: center;
     margin-top: 0px;
     text-align: center; }
+    .bienvenida h3 {
+      font-size: 24px; }
   .perfil {
     bottom: 30px; }
   .nav {
@@ -263,12 +301,16 @@ nav ul li {
 
 @media only screen and (max-width: 585px) {
   nav ul li {
-    width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    text-align: center; } }
+    display: none; }
+  .btn-menu {
+    display: inline-block;
+    position: absolute;
+    left: 165%;
+    bottom: 22px; } }
 
 @media only screen and (max-width: 300px) {
   .bienvenida h1 {
-    font-size: 32px; } }
+    font-size: 32px; }
+  .btn-menu {
+    left: 150%; } }
 /*# sourceMappingURL=estilos.css.map */

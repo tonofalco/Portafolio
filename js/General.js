@@ -3,17 +3,11 @@ NAVEGACIÓN SCROLL
 =============================================*/
 
 $(".nav-link").click(function(e){
-
 	e.preventDefault();
-
-	var target = $(this).attr("href");
-	
+	var target = $(this).attr("href");	
 	$("html, body").animate({
-
 		scrollTop: $(target).offset().top
-
 	},1000, "easeOutBack")
-
 })
 
 /*=============================================
@@ -27,3 +21,13 @@ $(function (){
 			easingType: "easeOutQuint"
 		})
 	})
+
+/*========================================
+PUSHBAR MOVIL
+========================================*/
+var pushbar = new Pushbar({
+	blur: true, 
+	overlay: true
+})
+
+
