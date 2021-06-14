@@ -39,7 +39,8 @@ nav ul li {
 
 .bienvenida {
   padding: 0px;
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin-bottom: -40px; }
   .bienvenida h1 {
     font-weight: 700;
     color: #918BB2;
@@ -164,7 +165,7 @@ nav ul li {
     padding-top: 56.25%; }
 
 .card__image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82); }
+  background-image: url(../img/libreria.JPG); }
 
 .card__image--river {
   background-image: url("../img/camaleones.JPG"); }
@@ -286,12 +287,13 @@ nav ul li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 0px;
     margin-top: 0px;
     text-align: center; }
     .bienvenida h3 {
       font-size: 24px; }
   .perfil {
-    bottom: 30px; }
+    bottom: 0px; }
   .nav {
     margin-bottom: 0px; }
   .datos-personales {
