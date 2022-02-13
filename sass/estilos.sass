@@ -1,0 +1,503 @@
+$negro: #0f0f0f
+$gris1: #f2f2f2
+$gris2: #999999
+$gris3: #707070
+$rojo: #FFE8E8
+$rojo2: #e9cbcb
+$rojo3: #FC6767 
+
+//========================================
+//GENERAL
+//========================================
+*
+    font-family: 'Poppins', sans-serif
+    margin: 0px
+    padding: 0px
+
+body
+    overflow-x: hidden
+
+#skill, #portafolio, #acerca-de
+    padding-top: 2.5% 
+
+//========================================
+//HEADER
+//========================================
+header
+    height: auto
+    position: fixed
+    padding-bottom: 0.5%
+    transition: 0.5s
+    width: 100%
+    z-index: 99
+    a img
+        margin: auto
+        padding: auto
+
+nav ul li
+    display: inline-block
+    margin: 15px px 0px 8px
+    padding: 5px 10px
+    a
+        color: $negro
+        font: 200 24px "poppins"
+        text-decoration: none
+        text-transform: uppercase
+        &:hover
+            color: $rojo2
+            text-decoration: none
+
+.btn-menu
+    border: 1px solid #000
+    background: transparent
+    cursor: pointer
+    display: none
+    font-size: 28px
+    height: 55px
+    margin-top: 10px
+    transition: .3s ease all
+    width: 55px
+    &:hover
+        color: #0c0a0a
+
+
+//========================================
+//BIENVENIDA
+//========================================
+.bienvenidaTxt
+    margin-top: 100px
+    margin-bottom: -40px
+    padding: 0px
+    hr 
+        width: 90%
+    h1
+        border: 0
+        color: $gris2
+        font: 700 80px "poppins"
+    h3
+        color: $gris3
+        font: 700 italic 30px "poppins"
+        margin: 10px 0px 30px 0px
+    .btn
+        background: $rojo2
+        border: 0
+        color: $negro
+        font: 300 24px "poppins"
+        letter-spacing: 8.3px
+        padding: 20px 25px
+        transition: all 1s ease
+        text-transform: uppercase
+        &:hover
+            box-shadow: 0 4px 12px rgba(167, 160, 206, 1)
+            background: $rojo3
+            color: $gris1 !important
+
+.perfil
+    bottom: 30px
+    img
+        border-radius: 5px 
+        height: 100%
+        margin: 0px
+        width: 100%
+
+//========================================
+//SKILLS
+//========================================
+.skills
+    display: flex
+
+.skill_seccion
+    background-color: $gris1 
+    list-style: none
+    text-transform: uppercase
+    
+    h1
+        color: $gris2
+        font: 700 60px "poppins"
+        margin: 30px 0px 0px 0px
+    h3
+        margin: 5px
+    h5
+        // margin-top: 10px
+        text-align: right
+
+    li
+        margin: 40px 0px
+        padding: 0px
+    .bar
+        background: #353b48
+        border: 1px solid rgba(0,0,0,0.3)
+        border-radius: 10px
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.24)
+        display: block
+        height: 20px
+        overflow: hidden
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1)
+        span
+            background: linear-gradient(135deg, rgba(233, 203,	203, 1)0%, rgba(252, 103, 103, 1)100%)
+            float: left
+            height: 20px
+        &:hover
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+        .html
+            animation: noventa 3s
+            width: 90%
+        .css
+            animation: ochenta 3s
+            width: 80%
+        .bootstrap
+            animation: ochenta 3s
+            width: 80%
+        .wordpress
+            animation: ochenta 3s
+            width: 80%
+        .javascript
+            animation: setenta 3s
+            width: 70%
+        .php
+            animation: sesenta 3s
+            width: 60%
+        .react
+            animation: sesenta 3s
+            width: 60%
+        .firebase
+            animation: sesenta 3s
+            width: 60%
+        .adobe
+            animation: sesentaYcinco 3s
+            width: 65%
+        .sony
+            animation: sesentaYcinco 3s
+            width: 65%
+        .ingles
+            animation: sesenta 3s
+            width: 60%
+        .python
+            animation: setenta 3s
+            width: 70%
+
+@keyframes noventa
+    0%
+        width: 0%
+    100%
+        width: 90%
+@keyframes ochenta
+    0%
+        width: 0%
+    100%
+        width: 80%
+@keyframes setenta
+    0%
+        width: 0%
+    100%
+        width: 70%
+@keyframes sesentaYcinco
+    0%
+        width: 0%
+    100%
+        width: 65%
+@keyframes sesenta
+    0%
+        width: 0%
+    100%
+        width: 60%
+
+
+//========================================
+//PORTAFOLIO
+//========================================
+.portafolio
+    margin-top: 40px
+    h1
+        color: $gris2
+        font: 700 60px "poppins"
+        margin: 30px 0px
+
+.btn 
+    background-color: #fff
+    border: 1px solid #cccccc//border-radius: 1rem
+    color: #696969
+    padding: 0.5rem
+    text-transform: lowercase
+
+.btn--block 
+    display: block
+    transition: all 0.8s ease
+    width: 100%
+    &:hover
+        background: $rojo2
+        color: $gris1
+
+.cards 
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    margin: 0
+    padding: 0
+
+.card 
+    background-color: #fff
+    border-radius: 0.25rem
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25)
+    display: flex
+    flex-direction: column
+    margin-bottom: 30px
+    overflow: hidden
+    &:hover 
+        .card__image 
+            filter: contrast(100%)
+
+.card__content 
+    display: flex
+    flex: 1 1 auto
+    flex-direction: column
+    padding: 1rem
+
+.card__image 
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    border-top-left-radius: 0.25rem
+    border-top-right-radius: 0.25rem
+    filter: contrast(70%)
+    overflow: hidden
+    position: relative
+    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91)
+    &::before 
+        content: ""
+        display: block
+        padding-top: 56.25% // 16:9 aspect ratio
+
+.card__image--library 
+    background-image: url("../img/libreria.JPG")
+.card__image--ceesp 
+    background-image: url("../img/ceesp.JPG")
+.card__image--calcule 
+    background-image: url("../img/calculadora.JPG")
+.card__image--restaurant 
+    background-image: url(../img/restaurante.JPG)
+.card__image--travel 
+    background-image: url(../img/viajes.JPG)
+.card__image--rute 
+    background-image: url(../img/cotizacion.JPG)
+
+
+.card__title 
+    color: $gris3
+    font-size: 1.25rem
+    font-weight: 300
+    letter-spacing: 2px
+    text-transform: uppercase
+    margin-bottom: 10px 
+
+.card__text 
+    flex: 1 1 auto
+    font-size: 0.875rem
+    line-height: 1.5
+    font: 300 14px "poppins"
+
+//========================================
+//ACERCA DE
+//========================================
+.acerca-de-fondo
+    background-color: $gris1
+    .info
+        padding: 60px 0px
+    h1
+        font: 700 60px "poppins"
+        color: $gris2
+        margin: 30px 0px
+    p
+        text-align: justify
+        font-size: 22px
+        font-weight: 300
+        font-style: italic
+        line-height: 40px
+        color: $negro
+    img
+        width: 80%
+
+//========================================
+//CONTACTO
+//========================================
+.contacto-fondo
+    background: $gris1
+    padding: 30px 0px
+    h1
+        font: 700 60px "poppins"
+        color: $gris2
+        margin: 30px 0px
+    .datos-personales
+        margin-bottom: 30px
+    .tarjeta-subfondo
+        background: #fff
+        padding: 30px 0px
+        box-shadow: 0px 2px 9px 1px rgba(112,112,112,0.3)
+    .btn
+        font-weight: 300
+        font-size: 28px
+        color: $negro
+        background: $rojo2
+        border: 0
+        padding: 13px 28px
+        text-align: center
+        text-transform: uppercase
+        transition: all 1s ease
+        width: 100%
+        letter-spacing: 8px
+        &:hover
+            box-shadow: 0 4px 12px rgba(167, 160, 206, 1)
+            background: $rojo3
+            color: $gris1 !important
+
+.caja-input p label
+    font-weight: 900
+    color: $gris3
+
+.nombre, .email, .textarea
+    width: 100%
+    font-weight: 300
+    border: none
+    background: none
+    outline: 0
+    color: $gris3
+    border-bottom: 1px solid $gris2
+
+.redes i
+    margin-right: 10px
+    &:hover
+        opacity: 0.7
+
+//========================================
+//FOOTER
+//========================================
+.footer
+	height: 60px
+	color: #FFFFFF
+	background: $negro
+
+//========================================
+//SCROLL UP
+//========================================
+#scrollUp
+	bottom: 20px
+	right: 20px
+	width: 50px
+	height: 50px
+	background: url(../img/flecha.jpg)
+
+//========================================
+//PUSHBAR
+//========================================
+.pushbar-menu
+    background: $negro
+    color: #fff
+    padding: 20px
+    .btn-cerrar
+        text-align: right
+        button
+            background: none
+            color: #808080
+            border: none
+            cursor: pointer
+            font-size: 20px
+    a 
+        display: block
+        color: #aaa
+        padding: 20px 0px
+        border-bottom: 1px solid rgba(112,112,112,.60)
+        font-weight: 300
+        font-size: 18px
+        transition: .3s ease color
+
+
+//========================================
+//CAMBIOS RESPONSIVE
+//========================================
+@media only screen and (max-width: 1200px) //xl
+    .bienvenidaTxt, .perfil
+        margin-top: 100px
+
+@media only screen and (max-width: 992px) //lg
+    .perfil img
+        width: 100%
+        height: 95%
+
+
+@media only screen and (max-width: 768px) //md
+    .espacio-blanco
+        display: none
+    .skill_seccion, .portafolio, .acerca-de-fondo, .contacto-fondo
+        h1
+            margin-left: 15px
+    .nav
+        margin-bottom: 0px
+    .bienvenida
+        justify-content: center
+        margin-bottom: 0px
+        margin-top: 0px
+        text-align: center
+        hr
+            margin-left: 10% 
+            width: 80%
+        h3
+            font-size: 24px
+        .bienvenidaTxt
+            margin-top: 200px
+            margin-bottom: 80px
+            h1
+                font: 700 60px "poppins"
+            h3
+                font: 700 italic 20px "poppins"
+        .perfil
+            margin-top: 0px
+            bottom: 0px
+            img
+                width: 85%
+                height: 90%
+    .cards
+        display: flex
+        justify-content: center  
+    .acerca-de-fondo .info
+        padding: 0px
+        img
+            width: 35%
+            padding-bottom: 15px
+
+    #skill, #portafolio, #acerca-de
+        padding-top: 25%
+
+@media only screen and (max-width: 576px)  //sm
+    #skill, #portafolio, #acerca-de
+        padding-top: 15%
+    .bienvenida .bienvenidaTxt
+        margin-top: 100px
+    
+    .skill_seccion, .portafolio, .acerca-de-fondo, .contacto-fondo
+        h1
+            text-align: center
+            margin-left: 0px
+
+    nav ul li
+        display: none
+    .btn-menu
+        display: inline-block
+        position: absolute
+        left: 225%
+        bottom: 15px        
+    .skills
+        display: block
+    
+@media only screen and (max-width: 378px) 
+    .skill_seccion, .portafolio, .acerca-de-fondo, .contacto-fondo
+        h1
+            font: 700 40px "poppins"
+    .bienvenidaTxt 
+        h1
+            font: 700 10px "poppins"
+    .btn-menu
+        display: inline-block
+        position: absolute
+        left: 225%
+        bottom: 0px  
+
