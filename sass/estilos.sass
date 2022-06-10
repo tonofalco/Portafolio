@@ -217,88 +217,70 @@ nav ul li
         font: 700 60px "poppins"
         margin: 30px 0px
 
-.btn 
-    background-color: #fff
-    border: 1px solid #cccccc//border-radius: 1rem
-    color: #696969
-    padding: 0.5rem
-    text-transform: lowercase
+.cards
+    margin: 0px 100px
+    margin-bottom: 50px
 
-.btn--block 
-    display: block
-    transition: all 0.8s ease
-    width: 100%
-    &:hover
-        background: $azul2
-        color: $gris1
-
-.cards 
-    display: flex
-    flex-wrap: wrap
-    list-style: none
-    margin: 0
-    padding: 0
-
-.card 
-    background-color: #fff
-    border-radius: 0.25rem
-    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25)
-    display: flex
-    flex-direction: column
+.card
+    box-shadow: 0px 10px 30px -1px rgba(0,0,0,0.25)
     margin-bottom: 30px
     overflow: hidden
+    border-radius: 5px
+    img
+        opacity: 0.95
+    .card-text
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 110%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        .contents
+            z-index: 1
+            transition: 0.5s
+            transform: translateX(-800px)
+            margin: 5px 14px
+            h3
+                font-size: 1.8em
+                text-transform: uppercase
+                letter-spacing: 1px
+            p
+                font-size: 1em
+                line-height: 1.4em
+                font-weight: 300
+            .btn
+                border: 1px solid #cccccc
+                width: 250px
+                &:hover
+                    background: $azul2
+                    color: $gris1
+                    transition: 1s !important
+            .tools 
+                font-size: 2.4em
+        &:hover 
+            .contents
+                transform: translateX(0px)
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 110%
+            background: #fff
+            transform: scaleY(0)
+            transition: transform 0.5s ease-in-out
+            transform-origin: bottom
     &:hover 
-        .card__image 
-            filter: contrast(100%)
-
-.card__content 
-    display: flex
-    flex: 1 1 auto
-    flex-direction: column
-    padding: 1rem
-
-.card__image 
-    background-position: center center
-    background-repeat: no-repeat
-    background-size: cover
-    border-top-left-radius: 0.25rem
-    border-top-right-radius: 0.25rem
-    filter: contrast(70%)
-    overflow: hidden
-    position: relative
-    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91)
-    &::before 
-        content: ""
-        display: block
-        padding-top: 56.25% // 16:9 aspect ratio
-
-.card__image--library 
-    background-image: url("../img/libreria.JPG")
-.card__image--ceesp 
-    background-image: url("../img/ceesp.JPG")
-.card__image--calcule 
-    background-image: url("../img/calculadora.JPG")
-.card__image--restaurant 
-    background-image: url(../img/restaurante.JPG)
-.card__image--travel 
-    background-image: url(../img/viajes.JPG)
-.card__image--rute 
-    background-image: url(../img/cotizacion.JPG)
-
-
-.card__title 
-    color: $gris3
-    font-size: 1.25rem
-    font-weight: 300
-    letter-spacing: 2px
-    text-transform: uppercase
-    margin-bottom: 10px 
-
-.card__text 
-    flex: 1 1 auto
-    font-size: 0.875rem
-    line-height: 1.5
-    font: 300 14px "poppins"
+        .card-text
+            &::before
+                transform: scaleY(1)
+                transition: transform 0.5s ease-in-out
+                transform-origin: bottom
 
 //========================================
 //ACERCA DE
@@ -468,8 +450,7 @@ nav ul li
                 width: 85%
                 height: 90%
     .cards
-        display: flex
-        justify-content: center  
+        margin: 0px 50px
     .acerca-de-fondo .info
         padding: 0px
         img
@@ -505,7 +486,8 @@ nav ul li
         bottom: 20px        
     .skills
         display: block
-    
+    .cards
+        margin: 0px 25px
 @media only screen and (max-width: 378px) 
     .skill_seccion, .portafolio, .acerca-de-fondo, .contacto-fondo
         h1
